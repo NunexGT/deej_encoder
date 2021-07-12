@@ -1,7 +1,7 @@
 # deej_encoder
 Branch of the Deej Library by Omriharel but for use with encoders.
 
-With this, you can now control your PC Sound, program by program, in a really practical way!
+With this, you can now control your PC Sound, program by program, in a really practical way! But with Digital Encoders instead of Potentiometers
 
 <img src="https://media.tenor.com/images/f4fc54c1cd7ead8a0891f584410b4c16/tenor.gif" width="350">
      
@@ -12,7 +12,6 @@ Original Deej work: https://github.com/omriharel/deej/blob/master/LICENSE
 
 3D case made by SNR-Tech-Bytes: https://www.thingiverse.com/thing:4598978/
 
-Arduino Program
 
 <h1>Bill of Materials</h1>
 Here´s what you need to buy for this project
