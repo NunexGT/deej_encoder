@@ -17,20 +17,20 @@ int analogSliderValues[NUM_SLIDERS];
 //   Best Performance: both pins have interrupt capability
 //   Good Performance: only the first pin has interrupt capability
 //   Low Performance:  neither pin has interrupt capability
-Encoder knobMaster(4,11);
-Encoder knobDiscord(2 , 6);
-Encoder knobChrome(12,8);
-Encoder knobGaming(14,9);
-Encoder knobMusic(10, 5);
+Encoder knobMaster(11,12);
+Encoder knobDiscord(9 , 10);
+Encoder knobChrome(6,8);
+Encoder knobGaming(4,5);
+Encoder knobMusic(2, 2);
 int Master, Discord, Chrome, Gaming, Music;
 int masterMute, discordMute, chromeMute, gamingMute, musicMute;
 int masterDebounceTime;
 //   avoid using pins with LEDs attached
 //buttons: 1, A5, A2, A1, A6
-const int masterButton=1;
-const int discordButton=A5;
-const int chromeButton=A2;
-const int gamingButton=A1;
+const int masterButton=A5;
+const int discordButton=A4;
+const int chromeButton=A3;
+const int gamingButton=A2;
 const int musicButton=A6;
 unsigned long lastDebounceTime = 0;  // the last time the output pin was toggled
 unsigned long debounceDelay = 175;    // the debounce time; increase if the output flickers
@@ -54,16 +54,16 @@ void setup() {
   pinMode(gamingButton, INPUT_PULLUP);
   pinMode(musicButton, INPUT_PULLUP);
   
-analogSliderValues[0]  = 512;
-knobMaster.write(51);
-analogSliderValues[1] = 512;
-knobDiscord.write(51);
-analogSliderValues[2] = 512;
-knobChrome.write(51);
-analogSliderValues[3] = 512;
-knobGaming.write(51);
-analogSliderValues[4] = 512;
-knobMusic.write(51);
+analogSliderValues[0]  = 1023;
+knobMaster.write(18);
+analogSliderValues[1] = 1023;
+knobDiscord.write(102);
+analogSliderValues[2] = 1023;
+knobChrome.write(102);
+analogSliderValues[3] = 1023;
+knobGaming.write(102);
+analogSliderValues[4] = 1023;
+knobMusic.write(102);
 pixels.begin();
 pixels.clear(); 
 masterMute=0;
